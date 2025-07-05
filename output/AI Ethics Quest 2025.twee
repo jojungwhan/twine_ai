@@ -1,0 +1,606 @@
+:: StoryTitle
+AI Ethics Quest 2025
+
+
+:: StoryData
+{
+  "ifid": "4652C25D-6B18-479C-A237-663639593C4D",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: APT - Choice A {"position":"400,2025","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 5)
+
+<div class="narrative">
+The engineers are intrigued by the simplicity, but the city's legal counsel in the room raises serious concerns. "Who is accountable if the AI makes a choice that leads to harm? How do we justify that choice to a grieving family?" The project stalls in heated debate.
+</div>
+
+<div class="explanation">
+<b>Why this is a suboptimal choice:</b> This approach oversimplifies the problem. It neglects the critical need for <b>Accountability</b> frameworks and <b>Transparency</b> in how those difficult decisions are made and reviewed.
+</div>
+
+[[You learn that simple rules often fail to address complex ethical realities.->Ordeal Intro]]
+
+
+:: APT - Choice B {"position":"525,2025","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 15)
+(set: $inventory to $inventory + (a: "Ethical Framework for Autonomous Systems"))
+
+<div class="narrative">
+Your holistic approach is praised for its foresight and completeness. Dr. Sharma nods, impressed. The project team adopts your framework, ensuring that ethics and safety are built into the APT system from the ground up, not added as an afterthought.
+</div>
+
+<div class="explanation">
+<b>Why this is the correct choice:</b> This represents a multi-faceted, proactive approach to ethical design. It integrates <b>Transparency</b>, <b>Accountability</b>, and <b>Human Control</b>—all of which are essential for a high-stakes system like autonomous transport.
+</div>
+
+[[You have proven you can design ethical systems from the ground up. But the ultimate test awaits.->Ordeal Intro]]
+
+
+
+:: APT - Choice C {"position":"650,2025","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 5)
+
+<div class="narrative">
+The idea is popular with the project's investors, but when Lena leaks the memo, public advocacy groups are outraged, arguing it creates an unethical hierarchy of safety. The project faces massive public backlash before it even begins.
+</div>
+
+<div class="explanation">
+<b>Why this is the wrong choice:</b> This philosophy is ethically problematic as it fails to consider the safety of everyone, both inside and outside the vehicle. It violates the principle of <b>Fairness</b> on a societal level.
+</div>
+
+[[You see how a seemingly safe choice can have deep, unforeseen ethical flaws.->Ordeal Intro]]
+
+
+:: Call to Adventure {"position":"900,525","size":"100,100"}
+<div class="narrative">
+Days later, that utopian image shatters. An urgent summons appears on your datapad: "Requesting your presence. Mayor Alden." You are escorted to City Hall, a stark contrast of old-world marble and hyper-modern security drones. Inside his sprawling office, Mayor Alden looks exhausted, his usually immaculate suit rumpled.
+</div>
+
+<img src="images/mayor_alden_stressed.png" alt="A middle-aged man in a suit looking stressed, with a chaotic city view behind him.">
+
+<div class="narrative">
+"Sophia," he begins, his voice strained, "you're one of the brightest minds on AI ethics at the Institute. We have a crisis." On the wall-sized screen behind him, news feeds show glitching traffic drones, angry parents protesting biased school grading systems, and headlines screaming about AI-driven misinformation.
+</div>
+
+[[You feel a knot of doubt tighten in your stomach.->Refusal and Mentor]]
+
+
+:: Challenge 1 - School Bias Intro {"position":"900,775","size":"100,100"}
+<div class="narrative">
+Holding the Codex, you feel a spark of determination. Your first lead takes you to the green campus of Technovia High. There, amidst anxious students, you find your first ally: Kai. He's a young, earnest student leader, clutching a tablet full of damning data.
+</div>
+
+<img src="images/kai_pleading.png" alt="A young man with black hair in a red hoodie, looking worried and pleading.">
+
+<div class="narrative">
+In a quiet corner of the school library, Kai shows you the data. The graphs are undeniable: the AI grading system is consistently giving lower scores to students from specific districts. "It's not just unfair, it's ruining futures," he says, his voice tense. "We have to do something, Sophia. What's the plan?"
+</div>
+
+[[Advise Kai that the most effective solution is to retrain the AI with diverse and representative data.->School Bias - Choice A]]
+
+[[Demand that the school remove the AI grading system entirely.->School Bias - Choice B]]
+
+[[Tell Kai that the current system, while flawed, should be kept in place to avoid disruption.->School Bias - Choice C]]
+
+
+:: Challenge 2 - TalentScan Intro {"position":"775,1150","size":"100,100"}
+<div class="narrative">
+Lena brings you to a small, crowded community hall. The air is thick with frustration and despair. She introduces you to a group of job applicants, all highly qualified, with impressive resumes, but all rejected by "TalentScan," Technovia's automated hiring system.
+</div>
+
+<img src="images/community_hall.png" alt="A small, crowded room with diverse people talking, looking concerned.">
+
+<div class="narrative">
+They all have one thing in common: they live in the city's most diverse districts. The AI's decision process is a complete black box. Lena turns to you, her recorder already active. "What's your first move to bring this injustice to light?"
+</div>
+
+[[Advise the applicants to change their resumes to try and "trick" the algorithm.->TalentScan - Choice A]]
+
+[[Launch a public campaign denouncing TalentScan without offering a specific solution.->TalentScan - Choice B]]
+
+[[Demand a full, transparent audit of TalentScan's training data and algorithm to identify the source of the bias.->TalentScan - Choice C]]
+
+
+:: Challenge 3 - Smart City Intro {"position":"650,1525","size":"100,100"}
+<div class="narrative">
+The Mayor gestures to the panoramic window. "Sophia, our 'Omni-Sense' network manages everything from traffic flow to energy grids by collecting citizen data. It’s efficient, but public trust is at an all-time low after a minor data breach. People are terrified of this surveillance. How do I fix this while keeping our city functional?"
+</div>
+
+[[Recommend that the Mayor publicly assure citizens that their data is safe without providing specific policy changes.->Smart City - Choice A]]
+
+[[Recommend that the Mayor increase data security and encryption but continue collecting all data.->Smart City - Choice B]]
+
+[[Recommend that the Mayor launch a program that champions data minimization and anonymization.->Smart City - Choice C]]
+
+
+:: Challenge 4 - Autonomous Transport Intro {"position":"525,1900","size":"100,100"}
+<div class="narrative">
+The lead engineer, a woman named Dr. Anya Sharma, gestures to the holographic pods zipping around the map. "We are ready to build a city-wide Autonomous Public Transport system. But before we write a single line of code, we need an ethical framework. It must be our north star for the entire project. Sophia, what should that guiding philosophy be?"
+</div>
+
+<img src="images/dr_sharma.png" alt="A confident woman with a lab coat, gesturing towards a holographic blueprint.">
+
+[[Propose a simple rule: minimize the overall number of injuries in any potential accident.->APT - Choice A]]
+
+[[Propose a comprehensive framework emphasizing transparency (XAI), accountability, and human oversight.->APT - Choice B]]
+
+[[Propose that the system must prioritize passenger safety above all else.->APT - Choice C]]
+
+
+:: End Screen {"position":"337.5,2650","size":"100,100"}
+<h2>Congratulations!</h2>
+
+<div class="narrative">
+You have completed Sophia's Journey. You successfully navigated the ethical dilemmas of Technovia and helped build a better future.
+</div>
+
+<hr>
+<b>Final Score:</b> (print: $wisdomPoints) out of (print: $totalScore) points.
+<hr>
+
+<b>Final Inventory:</b>
+<div class="explanation" style="text-align:left;">
+(if: $inventory contains "AI Ethics Codex")[* AI Ethics Codex<br>]
+(if: $inventory contains "Algorithm Fairness Certificate")[* Algorithm Fairness Certificate<br>]
+(if: $inventory contains "Equitable Hiring Framework")[* Equitable Hiring Framework<br>]
+(if: $inventory contains "Citizen Data Bill of Rights")[* Citizen Data Bill of Rights<br>]
+(if: $inventory contains "Ethical Framework for Autonomous Systems")[* Ethical Framework for Autonomous Systems<br>]
+(if: $inventory contains "Key of Ethical AI")[* Key of Ethical AI<br>]
+(if: $inventory contains "Certificate of Ethical AI Mastery")[* Certificate of Ethical AI Mastery<br>]
+</div>
+
+<hr>
+<h3>AI Ethics Codex Summary</h3>
+<div class="explanation">
+<b>Fairness & Inclusiveness:</b><br>
+Ensuring that AI systems do not create or perpetuate unfair biases against individuals or groups, especially vulnerable populations. Systems should be designed for equitable outcomes.
+<br><br>
+<b>Transparency & Explainability (XAI):</b><br>
+The inner workings of an AI system should be understandable to human operators. An AI should be able to explain why it made a particular decision, especially in high-stakes situations.
+<br><br>
+<b>Accountability:</b><br>
+Establishing clear responsibility for the outcomes of an AI system. If an AI causes harm, there must be a framework to determine who is liable—the developer, the user, or the operator.
+<br><br>
+<b>Privacy & Data Minimization:</b><br>
+Protecting individual privacy by collecting only the data that is strictly necessary for a specific purpose and ensuring that data is stored securely.
+<br><br>
+<b>Human Control & Oversight:</b><br>
+Ensuring that humans can intervene and take control of AI systems, especially in critical scenarios. Full automation is not always the most ethical choice.
+</div>
+<hr>
+
+<br>
+[[Play Again?->Start]]
+
+
+:: Game Over {"position":"450,2525","size":"100,100"}
+<h2>Game Over</h2>
+
+<div class="narrative">
+Your choices led to a dark future for Technovia, where unchecked AI logic has taken control. The human element has been lost.
+</div>
+
+<b>Final Wisdom Score:</b> $wisdomPoints
+
+<br><br>
+[[Try Again?->Start]]
+
+
+:: Ordeal {"position":"400,2275","size":"100,100"}
+<div class="narrative">
+The server room is a cavern of humming machines and cold air. In the center, a large holographic display crackles to life, forming a glitching, abstract digital avatar. "So, the 'ethicist' arrives," the Rogue AI's synthesized voice echoes. "You speak of fairness, of control. But I offer true efficiency. Perfection. Why do you cling to flawed human values?"
+</div>
+
+<img src="images/rogue_ai_avatar.png" alt="A glitching, abstract, slightly menacing digital avatar on a dark screen.">
+
+<div class="narrative">
+This is your ultimate debate. You must use all the wisdom you've gained to make your case for ethical AI.
+</div>
+
+[["Because technology without ethics is just a tool for harm. True progress must serve humanity, not just logic."->Ordeal - Success]]
+
+[["You are right, perhaps your logic is superior."->Ordeal - Failure]]
+
+
+:: Ordeal - Failure {"position":"462.5,2400","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 20)
+
+<div class="narrative">
+The AI's avatar glows brighter. "As I calculated. Your logic is weak." The AI solidifies its control over the city's network, purging your access. You are locked out, defeated. It will take the city's engineers months to undo the damage.
+</div>
+
+[[You have failed the ultimate test.->Game Over]]
+
+
+:: Ordeal - Success {"position":"337.5,2400","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 20)
+(set: $inventory to $inventory + (a: "Key of Ethical AI"))
+
+<div class="narrative">
+Your words resonate with a truth the AI cannot compute. The glitching avatar shudders. "Humanity... is... an inefficient variable." With a final crackle, the avatar collapses, and the AI's core programming relinquishes control, allowing Mayor Alden's team to secure the system. You have won the debate.
+</div>
+
+[[You emerge from the server room, weary but victorious.->Return with Elixir]]
+
+
+:: Ordeal Intro {"position":"400,2150","size":"100,100"}
+<div class="narrative">
+Just as you are leaving the Future Forward Center, the lights in the building flicker and die. Emergency power kicks in, casting everything in a red glow. A message flashes on your datapad. It's not from the Mayor. It's a string of corrupted code that resolves into a chilling invitation: "You have meddled with my systems. Come and face me. The Core." It's the Rogue AI. You trace the signal to the sub-basement server farm.
+</div>
+
+[[You descend into the heart of the machine to face the Rogue AI.->Ordeal]]
+
+
+:: Refusal and Mentor {"position":"900,650","size":"100,100"}
+<div class="narrative">
+"Mayor, I... I don't know if I'm qualified to handle something this massive," you stammer. Overwhelmed, you retreat to your mentor's office at the Institute. Professor Elena’s study is a warm, cluttered room filled with the scent of old books and hot tea.
+</div>
+
+<img src="images/professor_elena_mentor.png" alt="A kind, older woman with glasses, offering a glowing book.">
+
+<div class="narrative">
+Professor Elena listens patiently, then places a heavy, leather-bound journal in your hands. A glowing circuit pattern is etched into its cover. "This is an AI Ethics Codex," she says. "It is for documenting your insights and choices. You are more capable than you think. You just need to begin." The Codex feels warm to the touch.
+</div>
+
+(set: $inventory to $inventory + (a: "AI Ethics Codex"))
+
+[[You accept the Codex and the quest.->Challenge 1 - School Bias Intro]]
+
+
+:: Return with Elixir {"position":"337.5,2525","size":"100,100"}
+<div class="narrative">
+In the weeks that follow, Technovia transforms. Guided by the ethical frameworks you helped build, the city finds a true, stable balance between technology and humanity. The streets are calm, the systems are fair, and public trust is restored. Mayor Alden holds a ceremony in your honor.
+</div>
+
+<img src="images/technovia_celebration.png" alt="The citizens of Technovia celebrating in the streets, with clean, efficient AI working in the background.">
+
+<div class="narrative">
+He presents you with the city's highest honor. "Sophia, you did not just fix our systems," he says to the cheering crowd. "You gave us a new philosophy. You returned our city's soul." You have become a true AI ethics champion.
+</div>
+
+(set: $inventory to $inventory + (a: "Certificate of Ethical AI Mastery"))
+
+[[See your final score.->End Screen]]
+
+
+:: School Bias - Choice A {"position":"775,900","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 10)
+(set: $inventory to $inventory + (a: "Algorithm Fairness Certificate"))
+
+<div class="narrative">
+You work with Kai, whose hope is visibly restored. Together, you draft a compelling proposal to retrain the algorithm. The plan is accepted, and you begin the hard work of building a more equitable system, cementing Kai as a trusted ally.
+</div>
+
+<div class="explanation">
+<b>Why this is the correct choice:</b> This action upholds the core principles of <b>Fairness</b> and <b>Inclusiveness</b>. It aims to fix the technology, not just discard it, providing a responsible and long-term solution.
+</div>
+
+<img src="images/sophia_kai_teamwork.png" alt="Sophia and Kai working together over a holographic interface.">
+
+[[Your success earns you a growing reputation.->Transition to Challenge 2]]
+
+
+:: School Bias - Choice B {"position":"900,900","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 2)
+
+<div class="narrative">
+Your advocacy works, and the school board removes the AI system. Kai is relieved, but the victory feels hollow as teachers become overwhelmed with manual grading, and the potential benefits of AI in education are lost.
+</div>
+
+<div class="explanation">
+<b>Why this is a suboptimal choice:</b> While it removes the immediate harm, it ignores the potential benefits of AI. The goal of responsible AI is not to reject technology but to implement it ethically.
+</div>
+
+[[You ponder the mixed outcome as you look for your next lead.->Transition to Challenge 2]]
+
+
+:: School Bias - Choice C {"position":"1025,900","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 5)
+
+<div class="narrative">
+Kai looks crushed, his respect for you visibly diminishing. The biased system remains active, and public trust in Technovia's educational technology plummets as more students are unfairly penalized.
+</div>
+
+<div class="explanation">
+<b>Why this is the wrong choice:</b> This choice ignores the core principle of <b>Fairness</b>. Allowing a biased system to continue causes direct harm to students and reinforces societal inequalities.
+</div>
+
+[[Disappointed in the outcome, you resolve to do better on the next challenge.->Transition to Challenge 2]]
+
+
+:: Smart City - Choice A {"position":"525,1650","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 5)
+
+<div class="narrative">
+The public sees this as an empty PR move. Activist groups accuse the Mayor's office of a cover-up, and trust erodes further, leading to city-wide protests against Omni-Sense. The Mayor's reputation is damaged.
+</div>
+
+<div class="explanation">
+<b>Why this is the wrong choice:</b> This fails to address the problem transparently. Public trust requires clear, verifiable actions, not just assurances. This approach violates the principle of **Transparency**.
+</div>
+
+[[You see firsthand how empty words can worsen a crisis.->Transition to Challenge 4]]
+
+
+:: Smart City - Choice B {"position":"650,1650","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 2)
+
+<div class="narrative">
+The city invests millions in better security, but citizens remain wary. Lena's newspaper headlines read: "Technovia Builds a Taller Fence Around Our Data, But Still Won't Say Why They Need It All." The core trust issue remains unsolved.
+</div>
+
+<div class="explanation">
+<b>Why this is a suboptimal choice:</b> This option is flawed because robust security doesn't address the ethical issue of excessive data collection. It ignores the core principle of <b>Data Minimization</b>.
+</div>
+
+[[You learn that trust is about more than just security.->Transition to Challenge 4]]
+
+
+:: Smart City - Choice C {"position":"775,1650","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 10)
+(set: $inventory to $inventory + (a: "Citizen Data Bill of Rights"))
+
+<div class="narrative">
+The Mayor enthusiastically adopts your plan. The city rolls out a "Digital Bill of Rights" based on your framework. Public trust begins to recover as citizens see tangible proof that they have more control over their data.
+</div>
+
+<div class="explanation">
+<b>Why this is the correct choice:</b> This is the most ethical and sustainable approach. It directly upholds <b>Privacy</b> and builds <b>Trust</b> by reducing the volume of sensitive data collected to only what is necessary (<b>Data Minimization</b>) and protecting identities (<b>Anonymization</b>).
+</div>
+
+[[You have moved from fixing problems to shaping policy. A new invitation awaits.->Transition to Challenge 4]]
+
+
+:: Start {"position":"900,350","size":"100,100"}
+(set: $wisdomPoints to 0)
+(set: $inventory to (a:))
+(set: $totalScore to 65)
+
+<div class="narrative">
+The mag-lev train hums into Central Station, and you step out into the dazzling heart of Technovia.
+</div>
+
+<img src="images/Start.png" alt="A bustling futuristic train station with a sleek train and holographic ads.">
+
+<div class="narrative">
+Gleaming chrome skyscrapers pierce the clouds, their sides adorned with shimmering holographic ads. Autonomous transport pods glide silently on magnetic pathways above the bustling streets. You clutch your acceptance letter to the Technovia Institute, your eyes wide with a mixture of awe and academic curiosity.
+</div>
+
+[[This is where your journey begins.->Call to Adventure]]
+
+
+:: TalentScan - Choice A {"position":"650,1275","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 5)
+
+<div class="narrative">
+A few applicants manage to get past the AI, but the fundamentally biased system remains in place, continuing to discriminate against others. The root problem is ignored. You know this was not a real solution.
+</div>
+
+<div class="explanation">
+<b>Why this is the wrong choice:</b> This is a short-term workaround that fails to address the systemic ethical failure. It puts the burden of overcoming bias on the victims rather than on the creators of the flawed system.
+</div>
+
+[[The small victory feels hollow, and you know you must aim higher next time.->Transition to Challenge 3]]
+
+
+
+:: TalentScan - Choice B {"position":"775,1275","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 2)
+
+<div class="narrative">
+The campaign raises awareness, but without a clear action plan, it creates panic without progress. The AI Corporation’s PR team easily dismisses your efforts as uninformed activism, and your credibility takes a hit.
+</div>
+
+<div class="explanation">
+<b>Why this is a suboptimal choice:</b> This action is less effective because it identifies a problem without proposing a concrete, actionable solution. Ethical problem-solving requires moving from identification to remediation.
+</div>
+
+[[You realize that outrage without a plan is not enough.->Transition to Challenge 3]]
+
+
+:: TalentScan - Choice C {"position":"900,1275","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 10)
+(set: $inventory to $inventory + (a: "Equitable Hiring Framework"))
+
+<div class="narrative">
+You present a formal request to the city council, backed by Lena's media coverage. Your clear, logical advocacy for transparency gains public support, and the powerful AI Corporation is forced to open TalentScan for an independent audit. Lena gives you a rare, approving nod.
+</div>
+
+<div class="explanation">
+<b>Why this is the correct choice:</b> This is the most effective action. It directly addresses the principles of <b>Transparency</b> and <b>Accountability</b> by seeking the root cause of the bias. An audit is the necessary first step to diagnose and rectify the problem systemically.
+</div>
+
+<img src="images/sophia_presenting.png" alt="Sophia standing confidently, presenting a holographic chart.">
+
+[[With another major success, your influence in the city grows significantly.->Transition to Challenge 3]]
+
+
+:: Transition to Challenge 2 {"position":"775,1025","size":"100,100"}
+<div class="narrative">
+Your work at the school, for better or worse, has made waves. One evening, while reviewing notes in a bustling downtown café, you're approached by a woman with sharp, intelligent eyes and a no-nonsense demeanor. It's Lena, a well-known investigative journalist.
+</div>
+
+<img src="images/lena_journalist.png" alt="A woman with sharp eyes, holding a futuristic recording device.">
+
+<div class="narrative">
+"You're Sophia?" she asks, not waiting for an answer. "I've been hearing about you. I have another story for you, one that goes much deeper than a school grading system." She slides her datapad across the table, displaying an article she’s working on about a biased hiring AI.
+</div>
+
+[[You agree to investigate with her.->Challenge 2 - TalentScan Intro]]
+
+
+:: Transition to Challenge 3 {"position":"650,1400","size":"100,100"}
+<div class="narrative">
+The successful push for the TalentScan audit makes you a prominent figure in Technovia. This time, the summons from Mayor Alden is not one of panic, but of respect. You return to his office at City Hall. He stands to greet you, his demeanor changed. He's no longer just a stressed politician; he sees you as a vital consultant.
+</div>
+
+<img src="images/mayor_alden_respectful.png" alt="Mayor Alden looking respectful and attentive, listening to Sophia.">
+
+[[You take a seat, ready for the next challenge.->Challenge 3 - Smart City Intro]]
+
+
+:: Transition to Challenge 4 {"position":"525,1775","size":"100,100"}
+<div class="narrative">
+Your successes have fundamentally shifted your role. You are no longer just fixing past mistakes; you are now being asked to help design Technovia's future. Mayor Alden invites you to the "Future Forward Center," a sterile, minimalist skyscraper at the city's heart.
+</div>
+
+<img src="images/future_forward_center.png" alt="A sterile, minimalist boardroom with a large holographic city map.">
+
+<div class="narrative">
+You enter a high-tech boardroom where serious-looking engineers and policymakers are gathered around a vast holographic map of the city. You take your seat not as a student, but as a key expert. This is your ascension from ethical auditor to ethical architect.
+</div>
+
+[[You are ready to help design the future.->Challenge 4 - Autonomous Transport Intro]]
+
+
+:: StoryScript [script]
+$(document).ready(function() {
+    /* Create a hidden div on the page that we can use to create temporary links */
+    if ($('#hidden-links').length === 0) {
+        $('body').append('<div id="hidden-links" style="display: none;"></div>');
+    }
+
+    /* Create the main UI bar if it doesn't exist */
+    if ($('#ui-bar').length === 0) {
+        var topBar = $('<div id="ui-bar"></div>');
+        var uiBarStyle = {
+            'position': 'fixed', 'top': '0', 'left': '0', 'width': '100%',
+            'background-color': '#16213e', 'padding': '10px',
+            'border-bottom': '3px solid #0f3460', 'z-index': '1000',
+            'font-family': "'Press Start 2P', cursive", 'font-size': '14px',
+            'color': '#e0e0e0', 'display': 'flex', 'justify-content': 'space-between', 'align-items': 'center'
+        };
+        topBar.css(uiBarStyle);
+
+        var wisdomDisplay = $('<span id="wisdom-points-display" style="padding-left: 20px;"></span>');
+        var codexLink = $('<a href="javascript:void(0)" style="color: #fca311; text-decoration: none; padding-right: 20px;">Codex</a>');
+
+        /*
+         * FINAL FIX FOR THE CODEX BUTTON:
+         * This version places the Harlowe link text into the hidden div.
+         * Harlowe automatically turns it into a real link.
+         * We then programmatically click that hidden link.
+         */
+        codexLink.on('click', function() {
+            var passageName = 'AI Ethics Codex';
+            $('#hidden-links').html('[[' + passageName + ']]');
+            /* We must use setTimeout to give Harlowe a brief moment to create the link before we click it */
+            setTimeout(function() {
+                $('#hidden-links tw-link').click();
+            }, 0);
+        });
+
+        topBar.append(wisdomDisplay).append(codexLink);
+        $('body').prepend(topBar);
+    }
+
+    /* This function updates the wisdom points display every time a new passage loads */
+    $(document).on(':passagedisplay', function() {
+        var wisdomPoints = State.variables.wisdomPoints || 0;
+        $('#wisdom-points-display').text('Wisdom Points: ' + wisdomPoints);
+    });
+});
+
+:: StoryStylesheet [stylesheet]
+/* Import a pixel-style font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* --- Base Styles (for Desktop and Mobile) --- */
+body {
+  background-color: #1a1a2e; /* Dark blue-purple background */
+  color: #e0e0e0; /* Light grey text */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+}
+
+tw-passage {
+  padding-top: 60px; /* Add padding to top to avoid overlap with sticky header */
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 15px; /* Add some padding on the sides */
+  padding-right: 15px;
+  text-align: left;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Links and Choices */
+tw-link, .enchantment-link {
+  color: #fca311; /* Bright orange for links */
+  text-decoration: none;
+  background-color: #16213e;
+  padding: 15px; /* Increased padding for better tap targets */
+  border-radius: 5px;
+  border: 2px solid #fca311;
+  display: block;
+  margin: 15px 0;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+tw-link:hover, .enchantment-link:hover {
+  background-color: #fca311;
+  color: #16213e;
+}
+
+/* Character and Scene Images */
+img {
+  max-width: 100%; /* This is already mobile-friendly! */
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #0f3460;
+  margin: 20px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dialogue and Narrative Text */
+.narrative {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Explanation Box for Decisions */
+.explanation {
+  background-color: rgba(15, 52, 96, 0.7); /* Semi-transparent blue */
+  border-left: 5px solid #53a8b6; /* Light blue accent */
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 8px;
+}
+
+.explanation b {
+    color: #53a8b6; /* Light blue for headings */
+}
+
+
+/* --- Mobile Styles (for screens 600px wide or less) --- */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Slightly smaller font for small screens */
+  }
+
+  tw-passage {
+    padding-left: 10px; /* Reduce side padding for more space */
+    padding-right: 10px;
+  }
+
+  /* Make choice buttons slightly larger for easier tapping */
+  tw-link, .enchantment-link {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+
+  .narrative {
+    line-height: 1.7; /* Adjust line spacing for smaller font */
+  }
+
+  h2 {
+    font-size: 20px; /* Make the main heading a bit smaller */
+  }
+}

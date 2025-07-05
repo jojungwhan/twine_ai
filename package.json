@@ -1,0 +1,24 @@
+{
+  "name": "ai-ethics-game",
+  "version": "1.0.0",
+  "description": "Interactive story exploring AI ethics using Twine/Twee 3",
+  "main": "story.twee",
+  "scripts": {
+    "build": "tweego -o dist/game.html story.twee -f SugarCube-2",
+    "serve": "live-server --open=dist/game.html",
+    "lint": "tweego -l story.twee",
+    "dev": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "twine",
+    "twee",
+    "interactive-fiction",
+    "ai-ethics",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+} 

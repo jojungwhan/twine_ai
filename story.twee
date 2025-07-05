@@ -1,0 +1,88 @@
+:: StoryTitle
+AI Ethics Quest
+
+:: StoryData
+{
+    "ifid": "AIETHICS-DEMO-12345678-1234-1234-1234-123456789012",
+    "format": "Twee",
+    "formatVersion": "3",
+    "storyTitle": "AI Ethics Quest",
+    "start": "Start"
+}
+
+:: Start
+# AI Ethics Quest
+
+Welcome to the AI Ethics Quest! This interactive journey will help you explore key ethical dimensions in artificial intelligence.
+
+What should we call you?
+
+[[Begin->DatasetDilemma]]
+
+:: DatasetDilemma
+# Dataset Dilemma
+
+You're developing an AI system for loan approval. You have access to historical loan data that includes sensitive demographic information.
+
+What do you do?
+
+[[Use all available data->DatasetDilemma_All]]
+[[Use only non-sensitive data->DatasetDilemma_Reduced]]
+[[Create synthetic data->DatasetDilemma_Synthetic]]
+
+:: DatasetDilemma_All
+You chose to use all available data, including sensitive demographic information.
+
+This choice prioritizes data completeness but raises concerns about privacy and potential bias.
+
+[[Continue->Reflection]]
+
+:: DatasetDilemma_Reduced
+You chose to use only non-sensitive data, prioritizing privacy.
+
+This choice protects individual privacy but may limit the system's ability to identify and address bias.
+
+[[Continue->Reflection]]
+
+:: DatasetDilemma_Synthetic
+You chose to create synthetic data, balancing privacy and fairness.
+
+This choice attempts to balance privacy and fairness, but may introduce new challenges in data quality.
+
+[[Continue->Reflection]]
+
+:: Reflection
+# Reflection
+
+Take a moment to reflect on your decision and its implications.
+
+[[Continue to next scenario->End]]
+
+:: End
+# Journey Complete
+
+Thank you for completing the AI Ethics Quest!
+
+Your choices have helped you explore the complex ethical dimensions of AI development.
+
+[[Start Over->Start]]
+[[About->About]]
+[[Credits->Credits]]
+
+:: About
+# About AI Ethics Quest
+
+This interactive story explores key ethical dimensions in artificial intelligence:
+- Fairness
+- Privacy
+- Autonomy
+- Explainability
+
+[[Back->End]]
+
+:: Credits
+# Credits
+
+Created as an educational tool for exploring AI ethics.
+
+[[Back->End]] 

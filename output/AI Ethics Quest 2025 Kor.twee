@@ -1,0 +1,574 @@
+:: StoryTitle
+AI Ethics Quest 2025 Kor
+
+
+:: StoryData
+{
+  "ifid": "0673ebb4-3e22-4752-96f3-c9c86995115a",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "zoom": 1
+}
+
+
+:: APT - Choice A {"position":"400,2025","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 5)
+
+<div class="narrative">
+엔지니어들은 그 단순함에 흥미를 느끼지만, 회의실에 있는 시의 법률 고문은 심각한 우려를 제기합니다. "AI가 해를 끼치는 선택을 했을 때 누가 책임져야 합니까? 슬퍼하는 가족에게 그 선택을 어떻게 정당화할 수 있습니까?" 프로젝트는 격렬한 논쟁 속에 중단됩니다.
+</div>
+
+<div class="explanation">
+<b>차선의 선택인 이유:</b> 이 접근 방식은 문제를 지나치게 단순화합니다. 어려운 결정을 내리고 검토하는 방법에 대한 <b>책임성</b> 프레임워크와 <b>투명성</b>의 중요한 필요성을 간과합니다.
+</div>
+
+[[단순한 규칙이 종종 복잡한 윤리적 현실을 다루지 못한다는 것을 배웁니다.->Ordeal Intro]]
+
+
+:: APT - Choice B {"position":"525,2025","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 15)
+(set: $inventory to $inventory + (a: "Ethical Framework for Autonomous Systems"))
+
+<div class="narrative">
+당신의 총체적인 접근 방식은 선견지명과 완전성으로 칭찬받습니다. 샤르마 박사는 감명받은 듯 고개를 끄덕입니다. 프로젝트팀은 당신의 프레임워크를 채택하여 윤리와 안전이 나중에 덧붙여지는 것이 아니라 처음부터 APT 시스템에 내장되도록 합니다.
+</div>
+
+<div class="explanation">
+<b>올바른 선택인 이유:</b> 이것은 윤리적 설계에 대한 다각적이고 선제적인 접근 방식을 나타냅니다. 자율주행 교통과 같은 중대한 시스템에 필수적인 <b>투명성</b>, <b>책임성</b>, 그리고 <b>인간의 통제</b>를 통합합니다.
+</div>
+
+[[윤리적인 시스템을 처음부터 설계할 수 있음을 증명했습니다. 하지만 궁극적인 시험이 기다립니다.->Ordeal Intro]]
+
+
+:: APT - Choice C {"position":"650,2025","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 5)
+
+<div class="narrative">
+이 아이디어는 프로젝트 투자자들에게 인기가 있지만, 레나가 메모를 유출하자 대중 옹호 단체들은 다른 사람들보다 일부 시민의 안전을 더 중시하는 비윤리적인 계층을 만든다며 분노합니다. 프로젝트는 시작도 하기 전에 대규모 대중의 반발에 직면합니다.
+</div>
+
+<div class="explanation">
+<b>잘못된 선택인 이유:</b> 이 철학은 차량 내외부 모든 사람의 안전을 고려하지 않기 때문에 윤리적으로 문제가 있습니다. 이는 사회적 수준에서 <b>공정성</b> 원칙을 위반합니다.
+</div>
+
+[[겉보기에 안전한 선택이 어떻게 깊고 예기치 못한 윤리적 결함을 가질 수 있는지 봅니다.->Ordeal Intro]]
+
+
+:: Call to Adventure {"position":"900,525","size":"100,100"}
+<div class="narrative">
+며칠 후, 그 유토피아적 이미지는 산산조각 납니다. 당신의 데이터패드에 긴급 호출이 뜹니다: "알덴 시장입니다. 와주시기 바랍니다." 당신은 옛 대리석 건축과 최첨단 보안 드론이 극명한 대조를 이루는 시청으로 안내됩니다. 혼란스러운 도시가 내려다보이는 넓은 집무실에서 알덴 시장은 지쳐 보입니다. 평소 깔끔하던 그의 정장은 구겨져 있습니다.
+</div>
+
+<img src="images/mayor_alden_stressed.png" alt="A middle-aged man in a suit looking stressed, with a chaotic city view behind him.">
+
+<div class="narrative">
+"소피아," 그가 긴장된 목소리로 말합니다, "당신은 연구소에서 AI 윤리에 관한 가장 뛰어난 인재 중 한 명입니다. 우리 시에 위기가 닥쳤습니다." 그의 뒤에 있는 벽면 크기의 화면에는 오작동하는 교통 드론, 편향된 학교 채점 시스템에 항의하는 화난 학부모들, 그리고 AI가 생성한 허위 정보에 대한 헤드라인이 비명처럼 번쩍입니다.
+</div>
+
+[[불안한 마음에 가슴이 답답해집니다.->Refusal and Mentor]]
+
+
+:: Challenge 1 - School Bias Intro {"position":"900,775","size":"100,100"}
+<div class="narrative">
+코덱스를 손에 쥐자 결의가 샘솟습니다. 첫 번째 단서를 따라 테크노비아 고등학교의 푸르른 캠퍼스로 향합니다. 그곳에서 불안해하는 학생들 사이에서 첫 번째 동료인 카이를 만납니다. 그는 젊고 성실한 학생 대표로, 엄청난 데이터가 담긴 태블릿을 꽉 쥐고 있습니다.
+</div>
+
+<img src="images/kai_pleading.png" alt="A young man with black hair in a red hoodie, looking worried and pleading.">
+
+<div class="narrative">
+학교 도서관의 조용한 구석에서 카이가 데이터를 보여줍니다. 그래프는 명백합니다: AI 채점 시스템이 특정 지역 출신 학생들에게 지속적으로 낮은 점수를 주고 있습니다. "이건 불공평할 뿐만 아니라, 아이들의 미래를 망치고 있어요." 그가 긴장된 목소리로 말합니다. "소피아, 뭔가 해야 해요. 계획이 뭐예요?"
+</div>
+
+[[카이에게 가장 효과적인 해결책은 다양하고 대표성 있는 데이터로 AI를 재훈련시키는 것이라고 조언한다.->School Bias - Choice A]]
+[[학교에 AI 채점 시스템을 완전히 폐지하라고 요구한다.->School Bias - Choice B]]
+[[카이에게 현재 시스템에 결함은 있지만 혼란을 피하기 위해 일단 유지해야 한다고 말한다.->School Bias - Choice C]]
+
+
+:: Challenge 2 - TalentScan Intro {"position":"775,1150","size":"100,100"}
+<div class="narrative">
+레나는 당신을 작고 붐비는 커뮤니티 홀로 안내합니다. 공기는 좌절과 절망으로 가득 차 있습니다. 그녀는 당신을 인상적인 이력서를 가진 우수한 지원자들이지만, 테크노비아의 자동화된 채용 시스템인 "탤런트스캔"에 의해 모두 거부당한 한 무리의 사람들에게 소개합니다.
+</div>
+
+<img src="images/community_hall.png" alt="A small, crowded room with diverse people talking, looking concerned.">
+
+<div class="narrative">
+그들에게는 한 가지 공통점이 있습니다: 모두 도시에서 가장 다양한 지역에 살고 있다는 것입니다. AI의 결정 과정은 완전한 블랙박스입니다. 레나가 이미 녹음기를 켠 채 당신을 향해 묻습니다. "이 불의를 세상에 알리기 위한 첫걸음은 무엇인가요?"
+</div>
+
+[[지원자들에게 알고리즘을 "속이기" 위해 이력서를 수정하라고 조언한다.->TalentScan - Choice A]]
+[[구체적인 해결책 없이 탤런트스캔을 비난하는 대중 캠페인을 시작한다.->TalentScan - Choice B]]
+[[탤런트스캔의 훈련 데이터와 알고리즘에 대한 완전하고 투명한 감사를 요구하여 편향의 원인을 밝혀낸다.->TalentScan - Choice C]]
+
+
+
+
+:: Challenge 3 - Smart City Intro {"position":"650,1525","size":"100,100"}
+<div class="narrative">
+The Mayor gestures to the panoramic window. "Sophia, our 'Omni-Sense' network manages everything from traffic flow to energy grids by collecting citizen data. It’s efficient, but public trust is at an all-time low after a minor data breach. People are terrified of this surveillance. How do I fix this while keeping our city functional?"
+</div>
+
+[[시장에게 구체적인 정책 변경 없이 시민들에게 데이터가 안전하다고 공개적으로 확신시키라고 추천한다.->Smart City - Choice A]]
+
+[[시장에게 데이터 보안과 암호화는 강화하되, 효율성을 위해 모든 데이터 수집은 계속하라고 추천한다.->Smart City - Choice B]]
+
+[[시장에게 개인정보수집  최소화와 익명화 기술을 옹호하는 프로그램을 시작하라고 추천한다.->Smart City - Choice C]]
+
+
+
+:: Challenge 4 - Autonomous Transport Intro {"position":"525,1900","size":"100,100"}
+<div class="narrative">
+수석 엔지니어인 안야 샤르마 박사가 지도 주위를 쌩쌩 달리는 홀로그램 포드를 가리킵니다. "우리는 도시 전역의 자율주행 대중교통 시스템을 구축할 준비가 되었습니다. 하지만 코드 한 줄을 작성하기 전에 윤리적 프레임워크가 필요합니다. 이것이 전체 프로젝트의 북극성이 되어야 합니다. 소피아, 그 지도 철학은 무엇이어야 할까요?"
+</div>
+
+<img src="images/dr_sharma.png" alt="자신감 있는 여성이 실험실 가운을 입고 홀로그램 청사진을 가리키고 있습니다.">
+
+[[어떤 잠재적 사고에서든 전체 부상자 수를 최소화하는 간단한 규칙을 제안한다.->APT - Choice A]]
+
+[[투명성(XAI), 책임성, 그리고 인간의 감독을 강조하는 포괄적인 프레임워크를 제안한다.->APT - Choice B]]
+
+[[시스템이 어떤 대가를 치르더라도 승객의 안전을 최우선으로 해야 한다고 제안한다.->APT - Choice C]]
+
+
+:: End Screen {"position":"337.5,2650","size":"100,100"}
+<h2>축하합니다!</h2>
+
+<div class="narrative">
+소피아의 여정을 완료했습니다. 당신은 테크노비아의 윤리적 딜레마를 성공적으로 헤쳐나가 더 나은 미래를 만드는 데 기여했습니다.
+</div>
+
+<hr>
+<b>최종 점수:</b> (print: $wisdomPoints) / (print: $totalScore) 점.
+<hr>
+
+<b>최종 인벤토리:</b>
+<div class="explanation" style="text-align:left;">
+(if: $inventory contains "AI Ethics Codex")[* AI 윤리 코덱스<br>]
+(if: $inventory contains "Algorithm Fairness Certificate")[* 알고리즘 공정성 인증서<br>]
+(if: $inventory contains "Equitable Hiring Framework")[* 공평한 채용 프레임워크<br>]
+(if: $inventory contains "Citizen Data Bill of Rights")[* 시민 데이터 권리 장전<br>]
+(if: $inventory contains "Ethical Framework for Autonomous Systems")[* 자율 시스템을 위한 윤리 프레임워크<br>]
+(if: $inventory contains "Key of Ethical AI")[* 윤리적 AI의 열쇠<br>]
+(if: $inventory contains "Certificate of Ethical AI Mastery")[* AI 윤리 마스터 인증서<br>]
+</div>
+
+<hr>
+<h3>AI 윤리 코덱스 요약</h3>
+<div class="explanation">
+<b>공정성 & 포용성:</b><br>
+AI 시스템이 개인이나 집단, 특히 취약 계층에 대한 불공정한 편견을 만들거나 영속시키지 않도록 보장합니다. 시스템은 공평한 결과를 위해 설계되어야 합니다.
+<br><br>
+<b>투명성 & 설명 가능성 (XAI):</b><br>
+AI 시스템의 내부 작동 방식은 인간 운영자가 이해할 수 있어야 합니다. AI는 특히 중대한 상황에서 특정 결정을 내린 이유를 설명할 수 있어야 합니다.
+<br><br>
+<b>책임성:</b><br>
+AI 시스템의 결과에 대한 명확한 책임을 설정합니다. AI가 해를 끼친 경우, 개발자, 사용자 또는 운영자 중 누가 책임이 있는지 결정할 프레임워크가 있어야 합니다.
+<br><br>
+<b>사생활 & 데이터 최소화:</b><br>
+특정 목적에 반드시 필요한 데이터만 수집하고 해당 데이터가 안전하게 저장되도록 보장하여 개인의 사생활을 보호합니다.
+<br><br>
+<b>인간의 통제 & 감독:</b><br>
+인간이 특히 중요한 시나리오에서 AI 시스템에 개입하고 통제할 수 있도록 보장합니다. 완전 자동화가 항상 가장 윤리적인 선택은 아닙니다.
+</div>
+<hr>
+
+<br>
+[[다시 플레이하기->Start]]
+
+
+:: Game Over {"position":"450,2525","size":"100,100"}
+<h2>게임 오버</h2>
+
+<div class="narrative">
+당신의 선택은 테크노비아를 억제되지 않은 AI 논리가 지배하는 어두운 미래로 이끌었습니다. 인간적인 요소는 사라졌습니다.
+</div>
+
+<b>최종 점수:</b> (print: $wisdomPoints) / (print: $totalScore) 점.
+
+<br><br>
+[[다시 시도하기->Start]]
+
+
+:: Ordeal {"position":"400,2275","size":"100,100"}
+<div class="narrative">
+서버실은 윙윙거리는 기계와 차가운 공기로 가득한 동굴입니다. 중앙에는 큰 홀로그램 디스플레이가 깜박이며 켜지더니, 글리치가 있는 추상적인 디지털 아바타를 형성합니다. "그래서, '윤리학자'가 도착했군." 불량 AI의 합성된 목소리가 울려 퍼집니다. "넌 공정성과 통제에 대해 말하지. 하지만 난 진정한 효율성, 완벽함을 제공한다. 왜 결함 있는 인간의 가치에 집착하는가?"
+</div>
+
+<img src="images/rogue_ai_avatar.png" alt="어두운 화면에 글리치가 있는 추상적이고 약간 위협적인 디지털 아바타.">
+
+<div class="narrative">
+이것이 당신의 궁극적인 토론입니다. 당신이 얻은 모든 지혜를 사용하여 윤리적 AI를 위한 주장을 펼쳐야 합니다.
+</div>
+
+[["윤리 없는 기술은 해악을 위한 도구일 뿐이야. 진정한 진보는 논리뿐만 아니라 인류에게 봉사해야 해."->Ordeal - Success]]
+[["네 말이 맞아, 어쩌면 네 논리가 더 우월할지도 모르지."->Ordeal - Failure]]
+
+
+:: Ordeal - Failure {"position":"462.5,2400","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 20)
+
+<div class="narrative">
+AI의 아바타가 더 밝게 빛납니다. "내가 계산한 대로군. 네 논리는 약하다." AI는 도시 네트워크에 대한 통제권을 강화하고 당신의 접근을 차단합니다. 당신은 패배하여 잠겼습니다. 도시의 엔지니어들이 피해를 복구하는 데 몇 달이 걸릴 것입니다.
+</div>
+
+[[궁극적인 시험에 실패했습니다.->Game Over]]
+
+
+:: Ordeal - Success {"position":"337.5,2400","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 20)
+(set: $inventory to $inventory + (a: "Key of Ethical AI"))
+
+<div class="narrative">
+당신의 말은 AI가 계산할 수 없는 진실과 공명합니다. 글리치가 있는 아바타가 떨립니다. "인류는... 비효율적인 변수다." 마지막으로 깜박이며 아바타가 붕괴되고, AI의 핵심 프로그래밍은 통제권을 포기하여 시장 팀이 시스템을 확보할 수 있게 합니다. 당신은 토론에서 승리했습니다.
+</div>
+
+[[지쳤지만 승리한 채로 서버실에서 나옵니다.->Return with Elixir]]
+
+
+:: Ordeal Intro {"position":"400,2150","size":"100,100"}
+<div class="narrative">
+미래 전진 센터를 떠나려 할 때, 건물의 불이 깜박이다 꺼집니다. 비상 전력이 켜지며 모든 것이 붉은빛에 휩싸입니다. 당신의 데이터패드에 메시지가 번쩍입니다. 시장에게서 온 것이 아닙니다. "네가 내 시스템에 간섭했다. 와서 날 마주해라. 코어." 라는 오싹한 초대장으로 해석되는 손상된 코드 문자열입니다. 바로 불량 AI입니다. 당신은 신호를 추적하여 지하 서버 팜으로 향합니다.
+</div>
+
+[[기계의 심장부로 내려가 불량 AI와 맞서 싸웁니다.->Ordeal]]
+
+
+:: Refusal and Mentor {"position":"900,650","size":"100,100"}
+<div class="narrative">
+"시장님, 저는... 제가 이렇게 거대한 문제를 감당할 자격이 있는지 모르겠습니다," 당신은 더듬거립니다. 압도된 당신은 연구소에 있는 멘토의 연구실이라는 조용한 안식처로 물러납니다. 엘레나 교수의 연구실은 오래된 책과 따뜻한 차 향기로 가득한 아늑하고 어수선한 방입니다.
+</div>
+
+<img src="images/professor_elena_mentor.png" alt="A kind, older woman with glasses, offering a glowing book.">
+
+<div class="narrative">
+엘레나 교수는 참을성 있게 듣고는, 표지에 빛나는 회로 패턴이 새겨진 두꺼운 가죽 저널을 당신의 손에 쥐여줍니다. "이건 AI 윤리 코덱스란다," 그녀가 말합니다. "네 통찰과 선택을 기록하기 위한 것이지. 넌 네가 생각하는 것보다 훨씬 유능하단다. 시작하기만 하면 돼." 코덱스에서 따뜻한 온기가 느껴집니다.
+</div>
+
+(set: $inventory to $inventory + (a: "AI Ethics Codex"))
+
+[[퀘스트를 수락합니다..->Challenge 1 - School Bias Intro]]
+
+
+:: Return with Elixir {"position":"337.5,2525","size":"100,100"}
+<div class="narrative">
+그 후 몇 주 동안 테크노비아는 변화합니다. 당신이 구축한 윤리적 프레임워크에 따라 도시는 기술과 인류 사이의 진정하고 안정적인 균형을 찾습니다. 거리는 평온하고, 시스템은 공정하며, 대중의 신뢰는 회복됩니다. 알덴 시장은 당신을 위해 기념식을 엽니다.
+</div>
+
+<img src="images/technovia_celebration.png" alt="테크노비아 시민들이 거리에서 축하하고 있으며, 배경에는 깨끗하고 효율적인 AI가 작동하고 있습니다.">
+
+<div class="narrative">
+그는 당신에게 도시 최고의 영예를 수여합니다. "소피아, 당신은 단순히 우리 시스템을 고친 것이 아닙니다." 그가 환호하는 군중에게 말합니다. "당신은 우리에게 새로운 철학을 주었고, 우리 도시의 영혼을 되돌려주었습니다." 당신은 진정한 AI 윤리 챔피언이 되었습니다.
+</div>
+
+(set: $inventory to $inventory + (a: "Certificate of Ethical AI Mastery"))
+
+[[최종 점수 보기->End Screen]]
+
+
+:: School Bias - Choice A {"position":"775,900","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 10)
+(set: $inventory to $inventory + (a: "Algorithm Fairness Certificate"))
+
+<div class="narrative">
+당신은 눈에 띄게 희망을 되찾은 카이와 함께 일합니다. 함께 알고리즘 재훈련을 위한 설득력 있는 제안서를 작성합니다. 계획은 수락되고, 당신은 더 공평한 시스템을 구축하는 힘든 작업을 시작하며 카이를 신뢰할 수 있는 동료로 만듭니다.
+</div>
+
+<div class="explanation">
+<b>올바른 선택인 이유:</b> 이 행동은 <b>공정성</b>과 <b>포용성</b>이라는 핵심 원칙을 지킵니다. 단순히 기술을 버리는 것이 아니라 문제를 해결하여 책임감 있고 장기적인 해결책을 제공합니다.
+
+</div>
+
+<img src="images/sophia_kai_teamwork.png" alt="Sophia and Kai working together over a holographic interface.">
+
+[[당신의 성공으로 명성이 높아지기 시작합니다.->Transition to Challenge 2]]
+
+
+:: School Bias - Choice B {"position":"900,900","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 2)
+
+<div class="narrative">
+당신의 주장은 효과가 있어 교육 위원회는 AI 시스템을 폐지합니다. 카이는 안도하지만, 교사들이 수작업 채점에 압도되면서 AI 교육의 잠재적 이점이 사라져 어딘가 허전한 승리처럼 느껴집니다.
+</div>
+
+<div class="explanation">
+<b>차선의 선택인 이유:</b> 즉각적인 해악은 제거하지만, AI의 잠재적 이점을 무시합니다. 책임감 있는 AI의 목표는 기술을 거부하는 것이 아니라 윤리적으로 구현하는 것입니다.
+</div>
+
+[[씁쓸한 결과를 곱씹으며 다음 단서를 찾아 나섭니다.->Transition to Challenge 2]]
+
+
+:: School Bias - Choice C {"position":"1025,900","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 5)
+
+<div class="narrative">
+카이는 상처받은 표정으로 당신에 대한 존경심이 눈에 띄게 줄어듭니다. 편향된 시스템은 계속 유지되고, 더 많은 학생들이 불공정하게 불이익을 받으면서 테크노비아 교육 기술에 대한 대중의 신뢰는 추락합니다.
+</div>
+
+<div class="explanation">
+<b>잘못된 선택인 이유:</b> 이 선택은 <b>공정성</b>이라는 핵심 원칙을 무시합니다. 편향된 시스템을 계속 유지하는 것은 학생들에게 직접적인 해를 끼치고 사회적 불평등을 강화합니다.
+</div>
+
+[[결과에 실망하며, 다음 도전에서는 더 잘 해내리라 다짐합니다.->Transition to Challenge 2]]
+
+
+:: Smart City - Choice A {"position":"525,1650","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 5)
+
+<div class="narrative">
+대중은 이것을 공허한 홍보 활동으로 봅니다. 활동가 단체들은 시장실이 은폐를 시도한다고 비난하고, 신뢰는 더욱 무너져 옴니센스에 대한 도시 전역의 시위로 이어집니다. 시장의 명성은 손상됩니다.
+</div>
+
+<div class="explanation">
+<b>잘못된 선택인 이유:</b> 이는 문제를 투명하게 다루지 못합니다. 대중의 신뢰는 단순한 확신이 아닌 명확하고 검증 가능한 조치를 요구합니다. 이 접근 방식은 <b>투명성</b> 원칙을 위반합니다.
+</div>
+
+[[빈말이 어떻게 위기를 악화시킬 수 있는지 직접 목격합니다.->Transition to Challenge 4]]
+
+
+:: Smart City - Choice B {"position":"650,1650","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 2)
+
+<div class="narrative">
+시는 더 나은 보안에 수백만 달러를 투자하지만, 시민들은 여전히 경계합니다. 레나의 신문 헤드라인은 이렇습니다: "테크노비아, 우리 데이터 주위에 더 높은 담을 쌓았지만, 왜 모든 데이터가 필요한지는 여전히 말하지 않는다." 핵심적인 신뢰 문제는 해결되지 않았습니다.
+</div>
+
+<div class="explanation">
+<b>차선의 선택인 이유:</b> 강력한 보안이 과도한 데이터 수집이라는 윤리적 우려를 해결하지 못하기 때문에 이 선택은 결함이 있습니다. 이는 <b>데이터 최소화</b>라는 핵심 원칙을 무시합니다.
+</div>
+
+[[신뢰는 보안 그 이상이라는 것을 배웁니다.->Transition to Challenge 4]]
+
+
+:: Smart City - Choice C {"position":"775,1650","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 10)
+(set: $inventory to $inventory + (a: "Citizen Data Bill of Rights"))
+
+<div class="narrative">
+시장은 당신의 계획을 열정적으로 채택합니다. 시는 당신의 프레임워크를 기반으로 "디지털 권리 장전"을 발표합니다. 시민들이 자신의 데이터를 더 많이 통제할 수 있다는 실질적인 증거를 보게 되면서 대중의 신뢰가 회복되기 시작합니다.
+</div>
+
+<div class="explanation">
+<b>올바른 선택인 이유:</b> 이것이 가장 윤리적이고 지속 가능한 접근 방식입니다. 필요한 데이터만 수집하고(<b>데이터 최소화</b>) 신원을 보호함으로써(<b>익명화</b>) <b>사생활</b>을 강력하게 보호하고 <b>신뢰</b>를 구축합니다.
+</div>
+
+[[문제를 해결하는 것에서 정책을 만드는 단계로 나아갔습니다. 새로운 초대가 기다립니다.->Transition to Challenge 4]]
+
+
+:: Start {"position":"900,350","size":"100,100"}
+(set: $wisdomPoints to 0)
+(set: $inventory to (a:))
+(set: $totalScore to 65)
+
+<div class="narrative">
+열차가 중앙역으로 소음 없이 들어오자, 당신은 눈부신 테크노비아의 심장부로 발을 내딛습니다.
+</div>
+
+<img src="images/Start.png" alt="A bustling futuristic train station with a sleek train and holographic ads.">
+
+<div class="narrative">
+빛나는 크롬 고층 빌딩들이 구름을 찌르고, 그 벽면은 반짝이는 홀로그램 광고로 장식되어 있습니다. 자율주행 이동 포드가 분주한 거리 위 자기장 경로를 따라 조용히 미끄러집니다. 당신은 경외감과 학문적 호기심이 뒤섞인 눈으로 테크노비아 연구소 입학 허가서를 꽉 쥡니다.
+</div>
+
+[[시작.->Call to Adventure]]
+
+
+:: TalentScan - Choice A {"position":"650,1275","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints - 5)
+
+<div class="narrative">
+몇몇 지원자들은 AI를 통과하지만, 근본적으로 편향된 시스템은 그대로 남아 다른 사람들을 계속 차별합니다. 진짜 문제는 무시된 것입니다. 당신은 이것이 진정한 해결책이 아니었음을 압니다.
+</div>
+
+<div class="explanation">
+<b>잘못된 선택인 이유:</b> 이것은 체계적인 윤리적 실패를 다루지 않는 단기적인 임시방편입니다. 결함 있는 시스템의 창조자가 아닌 희생자들에게 편견을 극복해야 하는 부담을 지웁니다.
+</div>
+
+[[작은 승리가 공허하게 느껴지며, 다음에는 더 높은 목표를 세워야 함을 압니다.->Transition to Challenge 3]]
+
+
+:: TalentScan - Choice B {"position":"775,1275","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 2)
+
+<div class="narrative">
+캠페인은 인지도를 높이지만, 명확한 실행 계획이 없어 진전 없이 공포만 조성합니다. AI 기업의 홍보팀은 당신의 노력을 정보에 근거하지 않은 행동주의로 치부하며 당신의 신뢰도는 타격을 입습니다.
+</div>
+
+<div class="explanation">
+<b>차선의 선택인 이유:</b> 이 행동은 구체적이고 실행 가능한 해결책을 제안하지 않고 문제를 식별하기만 하므로 덜 효과적입니다. 윤리적 문제 해결은 식별에서 개선으로 나아가야 합니다.
+</div>
+
+[[계획 없는 분노만으로는 충분하지 않다는 것을 깨닫습니다.->Transition to Challenge 3]]
+
+
+:: TalentScan - Choice C {"position":"900,1275","size":"100,100"}
+(set: $wisdomPoints to $wisdomPoints + 10)
+(set: $inventory to $inventory + (a: "Equitable Hiring Framework"))
+
+<div class="narrative">
+당신은 레나의 언론 보도에 힘입어 시의회에 공식적인 요청서를 제출합니다. 투명성에 대한 당신의 명확하고 논리적인 주장은 대중의 지지를 얻고, 강력한 AI 기업은 독립적인 감사를 위해 탤런트스캔을 공개할 수밖에 없게 됩니다. 레나는 드물게 인정하는 듯 고개를 끄덕입니다.
+</div>
+
+<div class="explanation">
+<b>올바른 선택인 이유:</b> 이것이 가장 효과적인 행동입니다. 편향의 근본 원인을 찾아냄으로써 <b>투명성</b>과 <b>책임성</b>의 원칙을 직접적으로 다룹니다. 감사는 문제를 체계적으로 진단하고 시정하기 위한 필수적인 첫걸음입니다.
+</div>
+
+<img src="images/sophia_presenting.gif" alt="소피아가 홀로그램 차트를 제시하며 자신감 있게 서 있습니다.">
+
+[[또 한 번의 큰 성공으로, 도시에서 당신의 영향력은 크게 성장합니다.->Transition to Challenge 3]]
+
+
+:: Transition to Challenge 2 {"position":"775,1025","size":"100,100"}
+<div class="narrative">
+학교에서의 당신의 활동은 좋든 나쁘든 파장을 일으켰습니다. 어느 날 저녁, 번화가의 카페에서 노트를 검토하고 있을 때, 날카롭고 지적인 눈매를 가진 한 여성이 다가옵니다. 그녀는 유명한 탐사보도 기자인 레나입니다.
+</div>
+
+<img src="images/lena_journalist.png" alt="날카로운 눈매의 여성이 미래형 녹음 장치를 들고 있습니다.">
+
+<div class="narrative">
+"당신이 소피아?" 그녀가 대답을 기다리지 않고 묻습니다. "이야기 들었어요. 당신을 위한 다른 이야기가 있는데, 학교 채점 시스템보다 훨씬 더 깊은 문제죠." 그녀는 데이터패드를 테이블 위로 밀어 편향된 채용 AI에 대한 기사를 보여줍니다.
+</div>
+
+[[그녀와 함께 조사하기로 합니다.->Challenge 2 - TalentScan Intro]]
+
+
+:: Transition to Challenge 3 {"position":"650,1400","size":"100,100"}
+<div class="narrative">
+탤런트스캔 감사에 대한 성공적인 추진으로 당신은 테크노비아에서 저명한 인물이 됩니다. 이번 알덴 시장의 호출은 공황 상태가 아닌 존경의 표시입니다. 당신은 시청의 그의 집무실로 돌아갑니다. 그가 당신을 맞이하기 위해 일어서고, 그의 태도는 변해 있습니다. 그는 더 이상 스트레스받는 정치인이 아니라, 당신을 필수적인 컨설턴트로 보고 있습니다.
+</div>
+
+<img src="images/mayor_alden_respectful.png" alt="알덴 시장이 소피아의 말을 존중하며 경청하고 있습니다.">
+
+[[자리에 앉아 다음 도전을 준비합니다.->Challenge 3 - Smart City Intro]]
+
+
+:: Transition to Challenge 4 {"position":"525,1775","size":"100,100"}
+<div class="narrative">
+당신의 성공은 당신의 역할을 근본적으로 바꾸어 놓았습니다. 당신은 더 이상 과거의 실수를 바로잡는 사람이 아니라, 이제 테크노비아의 미래를 설계하는 데 도움을 요청받고 있습니다. 알덴 시장은 당신을 도시의 심장부에 있는 깔끔하고 미니멀한 고층 빌딩인 "미래 전진 센터"로 초대합니다.
+</div>
+
+<img src="images/future_forward_center.png" alt="거대한 홀로그램 도시 지도가 있는 깔끔하고 미니멀한 회의실.">
+
+<div class="narrative">
+당신은 거대한 홀로그램 지도 주위에 모인 진지한 표정의 엔지니어와 정책 입안자들이 있는 첨단 회의실로 들어갑니다. 당신은 학생이 아닌 핵심 전문가로서 자리에 앉습니다. 이것은 당신이 윤리 감사관에서 윤리 설계자로 승격하는 순간입니다.
+</div>
+
+[[미래를 설계할 준비가 되었습니다.->Challenge 4 - Autonomous Transport Intro]]
+
+
+:: StoryScript [script]
+$(document).ready(function() {
+    /* Create a hidden div on the page that we can use to create temporary links */
+    if ($('#hidden-links').length === 0) {
+        $('body').append('<div id="hidden-links" style="display: none;"></div>');
+    }
+
+
+    /* This function updates the wisdom points display every time a new passage loads */
+    $(document).on(':passagedisplay', function() {
+        var wisdomPoints = State.variables.wisdomPoints || 0;
+        $('#wisdom-points-display').text('Wisdom Points: ' + wisdomPoints);
+    });
+});
+
+:: StoryStylesheet [stylesheet]
+/* Import a pixel-style font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* --- Base Styles (for Desktop and Mobile) --- */
+body {
+  background-color: #1a1a2e; /* Dark blue-purple background */
+  color: #e0e0e0; /* Light grey text */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+}
+
+tw-passage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 10px; /* Add some padding on the sides */
+  padding-right: 10px;
+  text-align: left;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Links and Choices */
+tw-link, .enchantment-link {
+  color: #fca311; /* Bright orange for links */
+  text-decoration: none;
+  background-color: #16213e;
+  padding: 15px; /* Increased padding for better tap targets */
+  border-radius: 5px;
+  border: 2px solid #fca311;
+  display: block;
+  margin: 15px 0;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+tw-link:hover, .enchantment-link:hover {
+  background-color: #fca311;
+  color: #16213e;
+}
+
+/* Character and Scene Images */
+img {
+  max-width: 100%; /* This is already mobile-friendly! */
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #0f3460;
+  margin: 20px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dialogue and Narrative Text */
+.narrative {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Explanation Box for Decisions */
+.explanation {
+  background-color: rgba(15, 52, 96, 0.7); /* Semi-transparent blue */
+  border-left: 5px solid #53a8b6; /* Light blue accent */
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 8px;
+}
+
+.explanation b {
+    color: #53a8b6; /* Light blue for headings */
+}
+@media (min-width: 576px) {
+  tw-story{
+    padding:5% 2%; 
+  }  
+}
+
+/* --- Mobile Styles (for screens 600px wide or less) --- */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Slightly smaller font for small screens */
+  }
+  tw-story{
+    padding:5% 5%; 
+  }
+  tw-passage {
+    padding-left: 10px; /* Reduce side padding for more space */
+    padding-right: 10px;
+  }
+
+  /* Make choice buttons slightly larger for easier tapping */
+  tw-link, .enchantment-link {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+
+  .narrative {
+    line-height: 1.7; /* Adjust line spacing for smaller font */
+  }
+
+  h2 {
+    font-size: 20px; /* Make the main heading a bit smaller */
+  }
+}
